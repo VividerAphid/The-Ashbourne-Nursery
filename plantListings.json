@@ -1,0 +1,5 @@
+{"plants": {
+    "testPlant":{"name":"Test Plant", "plantTime": "any", "hardiness":"4-9"},
+    "secondTestPlant": {"name": "Second Test Plant", "plantTime": "spring", "hardiness":"8-13"} 
+    }
+}
