@@ -1,7 +1,10 @@
 {
 "plants": {
-    "testPlant":{"name":"Test Plant", "plantTime": "any", "hardiness":"4-9", "price":0},
-    "secondTestPlant": {"name": "Second Test Plant", "plantTime": "spring", "hardiness":"8-13", "price":0} 
+    "canterburyBells": {"name": "Canterbury Bells", "subName":"Cup & Saucer Mix", "heirloom": true, "perennial":true, "sun": "Full sun to part shade", "brand":"Burpee", "containerFriendly":true, "description":"Striking plants with unsual flowers in a blend of four vibrant colors. Biennial.", "image":"canterburybells1.jpg"},
+    "cosmos":{"name":"Cosmos","subName":"Bright Lights Mixed Colors","sun":"Full sun", "containerFriendly": true, "image": "cosmosBrightLights1.jpg", "brand":"Burpee", "description": "Easy to grow and brightly colored mix of early-flowering, semi-double blooms in yellow and orange."},
+    "snapdragon": {"name":"Snapdragon", "subName": "Fordhook® Tall Mixed Colors", "brand":"Burpee", "sun":"Full sun", "containerFriendly":true, "description": "Vibrant mixture in a wide range of colors. Great in beds, borders, and for cutting.", "image": "snapdragonfordhook1.jpg"},
+    "sunflower":{"name":"Sunflower", "subName":"Teddy bear", "containerFriendly":true, "brand":"Burpee", "sun":"Full sun", "description":"Golden yellow, fully double 6 inch blooms great for mid borders, containers and bouquets.", "image":"sunflowerTeddybear1.jpg"},
+    "babysBreath":{"name":"Baby's Breath", "subname":"Early Snowball", "perennial":true, "sun":"Full sun", "brand":"Burpee", "description":"Early-blooming plants are covered with doubled flowers. Lovely fresh or dried. Perennial, zones 4-8", "hardiness": "4-8", "image":"babysbreathearlysnowball1.jpg"}
 },
 "supplies":{
     "miniSquarePlanter": {"name":"Mini Square Planter", "price":0},
