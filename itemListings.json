@@ -1,0 +1,15 @@
+{
+"plants": {
+    "testPlant":{"name":"Test Plant", "plantTime": "any", "hardiness":"4-9", "price":0},
+    "secondTestPlant": {"name": "Second Test Plant", "plantTime": "spring", "hardiness":"8-13", "price":0} 
+},
+"supplies":{
+    "miniSquarePlanter": {"name":"Mini Square Planter", "price":0},
+    "standardSquarePlanter":{"name":"Standard Square Planter", "price":0},
+    "homeMadePottingMix":{"name":"Home Made Potting Mix", "price":0}
+},
+"extra":{
+    "willow":{"name": "Willow", "price": "Please take"},
+    "maple":{"name": "Maple", "price": "Please take"}
+}
+}

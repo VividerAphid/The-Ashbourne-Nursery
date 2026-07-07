@@ -1,5 +1,5 @@
-async function getPlantListings() {
-  const url = "plantListings.json";
+async function getItemListings() {
+  const url = "itemListings.json";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -7,9 +7,15 @@ async function getPlantListings() {
     }
 
     const result = await response.json();
-    console.log(result);
-    console.log(result.plants.testPlant.hardiness);
+    //console.log(result);
+    console.log("load success");
+    data = result;
+    updateUI();
   } catch (error) {
     console.error(error.message);
   }
+}
+
+function updateUI(){
+    console.log(data);
 }
