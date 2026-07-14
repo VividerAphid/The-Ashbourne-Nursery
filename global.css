@@ -2,3 +2,45 @@ body{
     background-color: #063c00;
     color: #ccc;
 }
+
+.card{
+    vertical-align: top;
+    border: 3px #eaeabc solid;
+    border-radius: 5px;
+    background-color: #062e02;
+    width: 300px;
+    height: 400px;
+    font-size: 15px;
+    display: inline-block;
+    margin:0.5%;
+}
+
+.cardTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 9%;
+    margin-bottom: 1%;
+    margin-top:1%;
+}
+.cardSubname{
+    font-size: 18px;
+    margin-left: 9%;
+    margin-bottom: 1%;
+    margin-top:1%;
+}
+.cardPicture{
+    border: 2px gray solid;
+    border-radius: 2px;
+    height: 50%;
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.projectImg{
+    width: 100%;
+    height: 100%;
+}
+.cardDescription{
+    margin-left:9%;
+    margin-right:9%;
+}
