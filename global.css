@@ -9,7 +9,7 @@ body{
     border-radius: 5px;
     background-color: #062e02;
     width: 300px;
-    height: 400px;
+    height: 450px;
     font-size: 15px;
     display: inline-block;
     margin:0.5%;
@@ -41,6 +41,12 @@ body{
     height: 100%;
 }
 .cardDescription{
+    margin-left:9%;
+    margin-right:9%;
+}
+.cardPrice{
+    font-size: 17px;
+    font-weight: bold;
     margin-left:9%;
     margin-right:9%;
 }

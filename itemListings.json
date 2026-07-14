@@ -7,9 +7,9 @@
     "sunflower":{"name":"Sunflower", "subName":"Teddy bear", "containerFriendly":true, "brand":"Burpee", "sun":"Full sun", "description":"Golden yellow, fully double 6 inch blooms great for mid borders, containers and bouquets.", "image":"sunflowerTeddybear1.jpg"}
 },
 "supplies":{
-    "miniSquarePlanter": {"name":"Mini Square Planter", "price":0},
-    "standardSquarePlanter":{"name":"Standard Square Planter", "price":0},
-    "homeMadePottingMix":{"name":"Home Made Potting Mix", "price":0}
+    "miniSquarePlanter": {"name":"Mini Square Planter"},
+    "standardSquarePlanter":{"name":"Standard Square Planter"},
+    "homeMadePottingMix":{"name":"Home Made Potting Mix"}
 },
 "extra":{
     "willow":{"name": "Willow", "price": "Please take"},
