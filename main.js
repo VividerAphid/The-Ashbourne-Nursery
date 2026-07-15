@@ -62,7 +62,7 @@ function buildCard(props){
     addElement({type:"div", id: props.title + "-title", class:"cardTitle", parent: currentCard, innards:props.title});//Card title
     addElement({type:"div", id: props.title + "subname", class:"cardSubname", parent: currentCard, innards: "<i>"+props.subName+"</i>"});//Card subname
     let cardImg = addElement({type:"img", id: props.title + "-picture", class:"cardPicture", parent:currentCard});//Card picture
-    cardImg.src = "/images/" + props.image;
+    cardImg.src = (props.image) ? "/images/" + props.image : "ANLogo.png";
     addElement({type:"div", id: props.title + "-description", class:"cardDescription", parent:currentCard, innards:props.description});//Card info
     addElement({type:"div", id: props.title + "-price", class:"cardPrice", parent:currentCard, innards:price});//Card price
     return currentCard;
