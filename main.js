@@ -20,7 +20,10 @@ function updateUI(){
     for(plant in data.plants){
       let cardInfo = {title: data.plants[plant].name, subName: data.plants[plant].subName, 
                 image: data.plants[plant].image, 
-                description: data.plants[plant].description, 
+                description: data.plants[plant].description,
+                sun: data.plants[plant].sun,
+                type: data.plants[plant].type,
+                containerFriendly: data.plants[plant].containerFriendly,
                 parent: document.getElementById("testInfo")};
       buildCard(cardInfo);
     }
@@ -63,7 +66,46 @@ function buildCard(props){
     addElement({type:"div", id: props.title + "subname", class:"cardSubname", parent: currentCard, innards: "<i>"+props.subName+"</i>"});//Card subname
     let cardImg = addElement({type:"img", id: props.title + "-picture", class:"cardPicture", parent:currentCard});//Card picture
     cardImg.src = (props.image) ? "/images/" + props.image : "ANLogo.png";
+    if(props.sun){
+      let cardSun = addElement({type:"img", id: props.title + "-sunIcon", parent:currentCard});//Card sun level
+      cardSun.src = getIconImage(props.sun);
+      configureIcon(cardSun);
+    }
+    if(props.type){
+      let cardType = addElement({type:"img", id: props.title + "-typeIcon", parent:currentCard});//Card type
+      cardType.src = getIconImage(props.type);
+      configureIcon(cardType);
+    }
+    if(props.containerFriendly){
+      let cardCont = addElement({type:"img", id: props.title + "-contIcon", parent:currentCard});//Card type
+      cardCont.src = getIconImage("containerFriendly");
+      configureIcon(cardCont);
+    }
     addElement({type:"div", id: props.title + "-description", class:"cardDescription", parent:currentCard, innards:props.description});//Card info
     addElement({type:"div", id: props.title + "-price", class:"cardPrice", parent:currentCard, innards:price});//Card price
     return currentCard;
+}
+
+function configureIcon(icon){
+  icon.width = 50;
+  icon.height = 50;
+}
+function getIconImage(type){
+  console.log("Checking for "+type);
+    switch(type){
+      case "Full sun":
+        return "/icons/FullSun.png";
+      case "Full sun to part shade":
+        return "/icons/PartSun.png";
+      case "Flower":
+        return "/icons/TypeFlower.png";
+      case "Herb":
+        return "/icons/TypeHerb.png";
+      case "Produce":
+        return "/icons/TypeProduce.png";
+      case "containerFriendly":
+        return "/icons/ContainerFriendly.png";
+    }
+    console.log("type "+type+" not found");
+    return "Uh oh!";
 }
